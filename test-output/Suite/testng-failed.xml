@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="chromeTests(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.salesforcetest.SalesforceTestAutomation">
+        <methods>
+          <include name="createAccountReportTc14"/>
+          <include name="salesforceLoginErrorTc1"/>
+          <include name="checkerrorMessageinContacs30"/>
+          <include name="setupBeforeTestMethod"/>
+          <include name="AfterTearDownMethod"/>
+          <include name="setUpBeforeTest"/>
+        </methods>
+      </class> <!-- com.salesforcetest.SalesforceTestAutomation -->
+    </classes>
+  </test> <!-- chromeTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
