@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chromeTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>30/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>31/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 12 18:56:24 EST 2023</td>
+<td>Started on:</td><td>Wed Feb 15 17:59:51 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>719 seconds (719779 ms)</td>
+<tr><td>Total time:</td><td>895 seconds (895418 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.salesforceLoginErrorTc1()'><b>salesforceLoginErrorTc1</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td><div><pre>java.lang.AssertionError: expected [Please enter your password.] but found []
-	at com.salesforcetest.SalesforceTestAutomation.salesforceLoginErrorTc1(SalesforceTestAutomation.java:74)
+<td title='com.salesforcetest.SalesforceTestAutomation.blockingEventInTheCalenderTc36()'><b>blockingEventInTheCalenderTc36</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td><div><pre>java.lang.AssertionError: expected [Calendar for Janani Abcd - Month View] but found [Calendar for Janani Abcd - Day View]
+	at com.salesforcetest.SalesforceTestAutomation.blockingEventInTheCalenderTc36(SalesforceTestAutomation.java:1252)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324998670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace324998670'><pre>java.lang.AssertionError: expected [Please enter your password.] but found []
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace111888987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace111888987'><pre>java.lang.AssertionError: expected [Calendar for Janani Abcd - Month View] but found [Calendar for Janani Abcd - Day View]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.salesforcetest.SalesforceTestAutomation.salesforceLoginErrorTc1(SalesforceTestAutomation.java:74)
+	at com.salesforcetest.SalesforceTestAutomation.blockingEventInTheCalenderTc36(SalesforceTestAutomation.java:1252)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -115,19 +115,327 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>25</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.mergeAccountsTc13()'><b>mergeAccountsTc13</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;acc2&apos;]&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6806a5d5e5b2d862567c4c881f4c7f06
+*** Element info: {Using=xpath, value=//input[@id=&apos;acc2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+	at com.salesforcetest.SalesforceTestAutomation.mergeAccountsTc13(SalesforceTestAutomation.java:491)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292579826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292579826'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;acc2&apos;]&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6806a5d5e5b2d862567c4c881f4c7f06
+*** Element info: {Using=xpath, value=//input[@id=&apos;acc2&apos;]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+	at com.salesforcetest.SalesforceTestAutomation.mergeAccountsTc13(SalesforceTestAutomation.java:491)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.createAccountTc10()'><b>createAccountTc10</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;acc2&apos;]&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86cf07400d2b7945d6f9b9447fa0d0ac
+*** Element info: {Using=xpath, value=//input[@id=&apos;acc2&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace266196910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266196910'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;acc2&apos;]&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86cf07400d2b7945d6f9b9447fa0d0ac
+*** Element info: {Using=xpath, value=//input[@id=&apos;acc2&apos;]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.editViewTc12()'><b>editViewTc12</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b618946d806cf78376f31ae741d28134
+*** Element info: {Using=id, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.base.BaseClass.validLoginMethod(BaseClass.java:84)
+	at com.salesforcetest.SalesforceTestAutomation.editViewTc12(SalesforceTestAutomation.java:457)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1899920794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1899920794'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b618946d806cf78376f31ae741d28134
+*** Element info: {Using=id, value=username}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.base.BaseClass.validLoginMethod(BaseClass.java:84)
+	at com.salesforcetest.SalesforceTestAutomation.editViewTc12(SalesforceTestAutomation.java:457)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.stuckOptsReportTc18()'><b>stuckOptsReportTc18</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#tryLexDialogX&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e606baed88caa10cce73800719031566
+*** Element info: {Using=id, value=tryLexDialogX}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.stuckOptsReportTc18(SalesforceTestAutomation.java:669)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847575327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847575327'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#tryLexDialogX&quot;}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e606baed88caa10cce73800719031566
+*** Element info: {Using=id, value=tryLexDialogX}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforcetest.SalesforceTestAutomation.stuckOptsReportTc18(SalesforceTestAutomation.java:669)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14()'><b>createAccountReportTc14</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;ext-gen296&apos;]&quot;}
-  (Session info: chrome=109.0.5414.120)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Accounts with last activity &gt; 30 days&apos;)]&quot;}
+  (Session info: chrome=109.0.5414.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03e05e9581f2989ca6b49853958057ea
-*** Element info: {Using=xpath, value=//button[@id=&apos;ext-gen296&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57943}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb3c8488a8a9e4626e8d52ca89e30938
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Accounts with last activity &gt; 30 days&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -138,18 +446,18 @@ Session ID: 03e05e9581f2989ca6b49853958057ea
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14(SalesforceTestAutomation.java:556)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14(SalesforceTestAutomation.java:534)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657218305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1657218305'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;ext-gen296&apos;]&quot;}
-  (Session info: chrome=109.0.5414.120)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1065713160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1065713160'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Accounts with last activity &gt; 30 days&apos;)]&quot;}
+  (Session info: chrome=109.0.5414.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03e05e9581f2989ca6b49853958057ea
-*** Element info: {Using=xpath, value=//button[@id=&apos;ext-gen296&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57943}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb3c8488a8a9e4626e8d52ca89e30938
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Accounts with last activity &gt; 30 days&apos;)]}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -163,7 +471,7 @@ Session ID: 03e05e9581f2989ca6b49853958057ea
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14(SalesforceTestAutomation.java:556)
+	at com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14(SalesforceTestAutomation.java:534)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -191,18 +499,18 @@ Session ID: 03e05e9581f2989ca6b49853958057ea
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>34</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>15</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.checkerrorMessageinContacs30()'><b>checkerrorMessageinContacs30</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.createNewcontactTc25()'><b>createNewcontactTc25</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#tryLexDialogX&quot;}
-  (Session info: chrome=109.0.5414.120)
+  (Session info: chrome=109.0.5414.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5638f5d983ded79b4baef772a6c1e79
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f91ef73141eee1010090b97932a01486
 *** Element info: {Using=id, value=tryLexDialogX}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -214,17 +522,17 @@ Session ID: d5638f5d983ded79b4baef772a6c1e79
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.salesforcetest.SalesforceTestAutomation.checkerrorMessageinContacs30(SalesforceTestAutomation.java:994)
+	at com.salesforcetest.SalesforceTestAutomation.createNewcontactTc25(SalesforceTestAutomation.java:876)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace223696575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace223696575'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#tryLexDialogX&quot;}
-  (Session info: chrome=109.0.5414.120)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1320566216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320566216'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#tryLexDialogX&quot;}
+  (Session info: chrome=109.0.5414.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;PEBBLES&apos;, ip: &apos;192.168.1.171&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5638f5d983ded79b4baef772a6c1e79
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f91ef73141eee1010090b97932a01486
 *** Element info: {Using=id, value=tryLexDialogX}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -239,7 +547,7 @@ Session ID: d5638f5d983ded79b4baef772a6c1e79
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.salesforcetest.SalesforceTestAutomation.checkerrorMessageinContacs30(SalesforceTestAutomation.java:994)
+	at com.salesforcetest.SalesforceTestAutomation.createNewcontactTc25(SalesforceTestAutomation.java:876)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -267,8 +575,8 @@ Session ID: d5638f5d983ded79b4baef772a6c1e79
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>13</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>10</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -278,155 +586,160 @@ Session ID: d5638f5d983ded79b4baef772a6c1e79
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.forgotPasswordTc4a()'><b>forgotPasswordTc4a</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.checkerrorMessageinContacs30()'><b>checkerrorMessageinContacs30</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>5</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.oppurtunityDropDownTc15()'><b>oppurtunityDropDownTc15</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>11</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.salesforceLoginTc2()'><b>salesforceLoginTc2</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>1</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.createNewViewIncontactTc26()'><b>createNewViewIncontactTc26</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>19</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.rememberMeTc3()'><b>rememberMeTc3</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>8</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.saveAndNewInContactsTc32()'><b>saveAndNewInContactsTc32</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>15</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.createNewcontactTc25()'><b>createNewcontactTc25</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>17</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.defaultViewinLeadsTc22()'><b>defaultViewinLeadsTc22</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>36</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.createNewViewinAccounTc11()'><b>createNewViewinAccounTc11</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>16</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.logout9()'><b>logout9</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>12</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>23</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.optyyPipelineReportTc17()'><b>optyyPipelineReportTc17</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>16</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.forgotPasswordTc4()'><b>forgotPasswordTc4</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>2</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.myprofile6()'><b>myprofile6</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>75</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.mysettings7()'><b>mysettings7</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>26</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.developerConsoleTc8()'><b>developerConsoleTc8</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
 <td>12</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.rememberMeTc3()'><b>rememberMeTc3</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>6</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.verifyTabCustomizationTc35()'><b>verifyTabCustomizationTc35</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>28</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.createNewViewinAccounTc11()'><b>createNewViewinAccounTc11</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>13</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.myContactsViewInTheCorrectPage28()'><b>myContactsViewInTheCorrectPage28</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>16</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.cancelinCreateNewViewTc31()'><b>cancelinCreateNewViewTc31</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>18</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.leadsDropdown21()'><b>leadsDropdown21</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
 <td>14</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.leadsTabTc20()'><b>leadsTabTc20</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.createNewViewIncontactTc26()'><b>createNewViewIncontactTc26</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>13</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>20</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.recentlyCreatedcontactTc27()'><b>recentlyCreatedcontactTc27</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.salesforceLoginTc2()'><b>salesforceLoginTc2</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>13</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.mergeAccountsTc13()'><b>mergeAccountsTc13</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>22</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
-<tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.stuckOptsReportTc18()'><b>stuckOptsReportTc18</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
-<td></td>
-<td>13</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>31</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.contactNameInRecentContacs29()'><b>contactNameInRecentContacs29</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
+<td>23</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.forgotPasswordTc4a()'><b>forgotPasswordTc4a</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>14</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.newButtonOnLeadsTc24()'><b>newButtonOnLeadsTc24</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>20</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.myprofile6()'><b>myprofile6</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>72</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.salesforceLoginErrorTc1()'><b>salesforceLoginErrorTc1</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>2</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.verifyFirstnameTc33()'><b>verifyFirstnameTc33</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
 <td>21</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.usermenuDropDownTc5()'><b>usermenuDropDownTc5</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.blockingEventInWeeklyResurrancerTc37()'><b>blockingEventInWeeklyResurrancerTc37</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>7</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>22</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.createAccountTc10()'><b>createAccountTc10</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.editedLasttnameTc34()'><b>editedLasttnameTc34</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>16</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>25</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.mysettings7()'><b>mysettings7</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>24</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.developerConsoleTc8()'><b>developerConsoleTc8</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>9</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.leadsTabTc20()'><b>leadsTabTc20</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>11</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.todaysLeadsTc23()'><b>todaysLeadsTc23</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>16</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>22</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.editViewTc12()'><b>editViewTc12</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.cancelinCreateNewViewTc31()'><b>cancelinCreateNewViewTc31</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>19</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>17</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.testQuarterlySummaryReportTc19()'><b>testQuarterlySummaryReportTc19</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.recentlyCreatedcontactTc27()'><b>recentlyCreatedcontactTc27</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>21</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>14</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
 <td title='com.salesforcetest.SalesforceTestAutomation.createNewOptyTc16()'><b>createNewOptyTc16</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
 <td>26</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 <tr>
-<td title='com.salesforcetest.SalesforceTestAutomation.newButtonOnLeadsTc24()'><b>newButtonOnLeadsTc24</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td title='com.salesforcetest.SalesforceTestAutomation.leadsDropdown21()'><b>leadsDropdown21</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
 <td></td>
-<td>17</td>
-<td>com.salesforcetest.SalesforceTestAutomation@6e20b53a</td></tr>
+<td>10</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.logout9()'><b>logout9</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>10</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.testQuarterlySummaryReportTc19()'><b>testQuarterlySummaryReportTc19</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>20</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.forgotPasswordTc4()'><b>forgotPasswordTc4</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>1</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.oppurtunityDropDownTc15()'><b>oppurtunityDropDownTc15</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>16</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.saveAndNewInContactsTc32()'><b>saveAndNewInContactsTc32</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>20</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.defaultViewinLeadsTc22()'><b>defaultViewinLeadsTc22</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>34</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
+<tr>
+<td title='com.salesforcetest.SalesforceTestAutomation.usermenuDropDownTc5()'><b>usermenuDropDownTc5</b><br>Test class: com.salesforcetest.SalesforceTestAutomation</td>
+<td></td>
+<td>13</td>
+<td>com.salesforcetest.SalesforceTestAutomation@74e52303</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,20 +1,15 @@
 package com.salesforcetest;
 
 import java.awt.AWTException;
-
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -30,13 +25,10 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
-
-
 
 import com.base.BaseClass;
 import com.utility.PropertiesUtility;
+
 @Listeners(com.utility.TestEventListnersutility.class)
 public class SalesforceTestAutomation extends BaseClass {
 
@@ -47,11 +39,11 @@ public class SalesforceTestAutomation extends BaseClass {
 	@Test
 	@Parameters("browserName")
 	public static void salesforceLoginErrorTc1() throws InterruptedException {
-		
+
 		logger.info("Inside saesforce error login");
 		extentreport.logTestInfo("Inside saesforce error login");
-		
-		//extentreport.logTestInfo("Inside saesforce error login");
+
+		// extentreport.logTestInfo("Inside saesforce error login");
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
 		propertiesUtility.loadFile("applicationDataProperties");
 		String userid = propertiesUtility.getPropertyValue("login.valid.userid");
@@ -73,7 +65,6 @@ public class SalesforceTestAutomation extends BaseClass {
 		System.out.println("Error message is " + actual);
 		Assert.assertEquals(actual, expected);
 		extentreport.logTestInfo("Inside saesforce error login method ended");
-
 
 	}
 
@@ -110,13 +101,14 @@ public class SalesforceTestAutomation extends BaseClass {
 
 		WebElement logout = driver.findElement(
 				By.xpath("/html/body/div/div[1]/table/tbody/tr/td[3]/div/div[3]/div/div/div[2]/div[3]/a[5]"));
-		//logout.click();
+		// logout.click();
 
 	}
 
 	@Test
 	@Parameters("browserName")
 	public static void forgotPasswordTc4a() throws InterruptedException {
+		String expected = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
 		propertiesUtility.loadFile("applicationDataProperties");
 		String userid = propertiesUtility.getPropertyValue("login.invalid.userid");
@@ -132,11 +124,18 @@ public class SalesforceTestAutomation extends BaseClass {
 		clickElement(login, "login");
 		extentreport.logTestInfo("forgot password passed");
 		Thread.sleep(4000);
+		WebElement error = driver.findElement(By.id("error"));
+
+		String actual = error.getText();
+		Assert.assertEquals(actual, expected);
+
 	}
 
 	@Test
 	@Parameters("browserName")
 	public static void forgotPasswordTc4() throws InterruptedException {
+		String expected = "Please enter your password.";
+
 		PropertiesUtility propertiesUtility = new PropertiesUtility();
 		propertiesUtility.loadFile("applicationDataProperties");
 		String userid = propertiesUtility.getPropertyValue("login.valid.userid");
@@ -147,8 +146,12 @@ public class SalesforceTestAutomation extends BaseClass {
 
 		user.sendKeys(userid);
 		WebElement continueA = driver.findElement(By.id("continue"));
-		//continueA.click();
+		// continueA.click();
 		clickElement(continueA, "rememberpassword");
+		// WebElement error = driver.findElement(By.id("error"));
+		// String actual=continueA.
+		// Assert.assertEquals(actual, expected);
+
 		extentreport.logTestInfo("forgot password testcase ended");
 
 	}
@@ -159,11 +162,10 @@ public class SalesforceTestAutomation extends BaseClass {
 		validLoginMethod();
 
 		WebElement ele = driver.findElement(By.id("userNav-arrow"));
-		//ele.click();
+		// ele.click();
 		clickElement(ele, "");
 		System.out.println("User drop down is displayed");
 		extentreport.logTestInfo("User drop down is displayed");
-
 
 	}
 
@@ -180,36 +182,35 @@ public class SalesforceTestAutomation extends BaseClass {
 		myProfile.click();
 		driver.findElement(By.xpath("//td/div/div[2]/div[2]/div[1]/h3/div/div/a/img")).click();
 		System.out.println("Edit profile clicked");
-		//Thread.sleep(5000);
+		// Thread.sleep(5000);
 
 		WebElement frame1 = driver.findElement(By.id("contactInfoContentId"));
 		driver.switchTo().frame(frame1);
 		Thread.sleep(3000);
-		//WaitUntilElementIsVisible(frame1,"frame1 element");
-		//waitFluentForVisibility(frame1,"frame1 element");
+		// WaitUntilElementIsVisible(frame1,"frame1 element");
+		// waitFluentForVisibility(frame1,"frame1 element");
 
 		WebElement about = driver.findElement(By.xpath("//li[@id=\"aboutTab\"]/a[1]"));
-		//about.click();
+		// about.click();
 		clickElement(about, "about");
-
 
 		WebElement lastName = driver.findElement(By.id("lastName"));
 		clearElement(lastName, "lastname");
-		//lastName.clear();
+		// lastName.clear();
 		lastName.sendKeys("Ram");
 
 		WebElement saveAll = driver.findElement(By.xpath("//div[@class=\"net-buttons zen-mtl\"]/input[1]"));
-		//saveAll.click();
+		// saveAll.click();
 		clickElement(saveAll, "saveAll");
 
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 		// post
 		WebElement postEle = driver.findElement(By.xpath("//span[text()='Post']"));
 		postEle.click();
 		WebElement postFrame = driver
 				.findElement(By.xpath("//iframe[contains(@title,'Rich Text Editor, publisherRichTextEditor')]"));
 		driver.switchTo().frame(postFrame);
-		
+
 		Thread.sleep(3000);
 		WebElement frameBody = driver.findElement(By.xpath("//body[text()='Share an update, @mention someone...']"));
 		frameBody.click();
@@ -225,8 +226,8 @@ public class SalesforceTestAutomation extends BaseClass {
 		WebElement file = driver.findElement(By.linkText("File"));
 		file.click();
 		WebElement upload = driver.findElement(By.id("chatterUploadFileAction"));
-		
-		//upload.click();
+
+		// upload.click();
 		clickElement(upload, "upload");
 		WebElement browse = driver.findElement(By.id("chatterFileStageTwo"));
 
@@ -256,7 +257,7 @@ public class SalesforceTestAutomation extends BaseClass {
 
 		WebElement share = driver.findElement(By.id("publishersharebutton"));
 		share.click();
-		
+
 		Thread.sleep(3000);
 
 		deletePhoto();
@@ -277,16 +278,15 @@ public class SalesforceTestAutomation extends BaseClass {
 
 		System.out.println("upload profile page opened");
 		WebElement save = driver.findElement(By.id("j_id0:uploadFileForm:uploadBtn"));
-		//save.click();
-		
-		clickElement(save,"save clicked");
-		
+		// save.click();
+
+		clickElement(save, "save clicked");
+
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//html[1]/body[1]/span[1]/form[1]/div[2]/input[1]")).click();
 		extentreport.logTestInfo("profile photo uploaded successfully");
 		System.out.println("profile photo uploaded successfully");
 		extentreport.logTestInfo("profile photo uploaded successfully");
-
 
 	}
 
@@ -298,12 +298,12 @@ public class SalesforceTestAutomation extends BaseClass {
 		validLoginMethod();
 
 		WebElement userMenu = driver.findElement(By.id("userNav-arrow"));
-		//userMenu.click();
+		// userMenu.click();
 		clickElement(userMenu, "usermenu");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='My Settings']")).click();
 		System.out.println("my settings link clicked");
-		extentreport.logTestInfo(       "my settings link clicked"      );             
+		extentreport.logTestInfo("my settings link clicked");
 		driver.findElement(By.id("PersonalInfo_font")).click();
 		System.out.println("personal tag clicked inside settings user menu");
 		Thread.sleep(3000);
@@ -325,12 +325,12 @@ public class SalesforceTestAutomation extends BaseClass {
 		driver.findElement(By.xpath("//span[@id='EmailSetup_font']")).click();
 		driver.findElement(By.id("EmailSettings_font")).click();
 		WebElement email = driver.findElement(By.id("sender_name"));
-		//email.clear();
+		// email.clear();
 		clearElement(email, "email");
 		email.sendKeys("janani");
 		System.out.println("printing email name");
 		WebElement emailAddress = driver.findElement(By.id("sender_email"));
-		//emailAddress.clear();
+		// emailAddress.clear();
 		clearElement(emailAddress, "emailaddress");
 
 		emailAddress.sendKeys("janani@gmail.com");
@@ -356,7 +356,7 @@ public class SalesforceTestAutomation extends BaseClass {
 		validLoginMethod();
 
 		WebElement userMenu = driver.findElement(By.id("userNav-arrow"));
-		//userMenu.click();
+		// userMenu.click();
 		clickElement(userMenu, "usermenu");
 		Thread.sleep(3000);
 
@@ -392,7 +392,7 @@ public class SalesforceTestAutomation extends BaseClass {
 		validLoginMethod();
 
 		WebElement userMenu = driver.findElement(By.id("userNav-arrow"));
-		//userMenu.click();
+		// userMenu.click();
 		clickElement(userMenu, "usermenu");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//td[3]/div/div[3]/div/div/div[2]/div[3]/a[5]")).click();
@@ -481,7 +481,6 @@ public class SalesforceTestAutomation extends BaseClass {
 		System.out.println("test case completed");
 		extentreport.logTestInfo("test case completed");
 
-
 	}
 
 	@Test
@@ -494,7 +493,6 @@ public class SalesforceTestAutomation extends BaseClass {
 
 		driver.findElement(By.xpath("//div[1]/div/nav/ul/li[7]/a")).click();
 		Thread.sleep(3000);
-
 
 		driver.findElement(By.xpath("//table/tbody/tr/td[2]/div/div/div/ul/li[4]/span/a")).click();
 		System.out.println("merge page opened");
@@ -603,8 +601,8 @@ public class SalesforceTestAutomation extends BaseClass {
 		Thread.sleep(3000);
 
 		WebElement newopTab = driver.findElement(By.xpath("//tbody/tr[1]/td[2]/input[1]"));
-		//Thread.sleep(5000);
-		waitFluentForVisibility(newopTab,"newopTab element");
+		// Thread.sleep(5000);
+		waitFluentForVisibility(newopTab, "newopTab element");
 
 		newopTab.click();
 		Thread.sleep(3000);
@@ -978,6 +976,11 @@ public class SalesforceTestAutomation extends BaseClass {
 		rece.click();
 		// Assert.assertEquals(true, Ram.isSelected()); //Verifies that the radio
 		System.out.println("recent element is clicked");
+		/*
+		 * String expected = "Create New View"; WebElement assertex =
+		 * driver.findElement(By.xpath("//h2[@class='pageDescription']")); String actual
+		 * = assertex.getText(); Assert.assertEquals(actual, expected);
+		 */
 
 	}
 
@@ -1006,6 +1009,11 @@ public class SalesforceTestAutomation extends BaseClass {
 		savecontacts.click();
 		System.out.println("Error message received");
 
+		String expected = "Create New View";
+		WebElement assertex = driver.findElement(By.xpath("//h2[@class='pageDescription']"));
+		String actual = assertex.getText();
+		Assert.assertEquals(actual, expected);
+
 	}
 
 	@Test
@@ -1033,6 +1041,12 @@ public class SalesforceTestAutomation extends BaseClass {
 		WebElement cancel = driver.findElement(By.xpath("//input[@title='Cancel']"));
 		cancel.click();
 		System.out.println("given contacts not created in contacts home page");
+
+		String expected = "Home";
+		WebElement assertex = driver.findElement(By.xpath("//h2[@class='pageDescription']"));
+		String actual = assertex.getText();
+		Assert.assertEquals(actual, expected);
+
 	}
 
 	@Test
@@ -1057,6 +1071,269 @@ public class SalesforceTestAutomation extends BaseClass {
 		WebElement saveAndNew = driver.findElement(By.xpath("//input[@title='Save & New']"));
 		saveAndNew.click();
 		System.out.println("Save and new clicked");
+
+		String expected = "New Contact";
+		WebElement assertex = driver.findElement(By.xpath("//h2[@class='pageDescription']"));
+		String actual = assertex.getText();
+		Assert.assertEquals(actual, expected);
+
+	}
+
+	@Test
+	public static void verifyFirstnameTc33() throws InterruptedException {
+		String expected = "Janani Ram ";
+		validLoginMethod();
+		WebElement home = driver.findElement(By.id("home_Tab"));
+		clickElement(home, "home");
+		Thread.sleep(3000);
+		WebElement linkName = driver.findElement(By.linkText("Janani Ram"));
+
+		if (linkName.isDisplayed()) {
+			System.out.println("Yes link is there");
+		} else {
+			System.out.println("No link is there");
+		}
+		System.out.println("link is verified");
+		Thread.sleep(3000);
+		driver.findElement(By.id("tryLexDialogX")).click();
+		System.out.println("prompt is closed");
+		clickElement(linkName, "linkName");
+		Thread.sleep(03000);
+		WebElement text = driver.findElement(By.id("tailBreadcrumbNode"));
+		String actual = text.getText();
+		System.out.println("text message is " + actual);
+		Thread.sleep(3000);
+		Assert.assertEquals(actual, expected);
+		extentreport.logTestInfo("Inside home link method");
+
+	}
+
+	@Test
+	public static void editedLasttnameTc34() throws InterruptedException {
+		validLoginMethod();
+		String expected = "Janani Abcd ";
+		WebElement home = driver.findElement(By.id("home_Tab"));
+		// WaitUntilElementIsVisible(home, "home");
+		clickElement(home, "home");
+		Thread.sleep(5000);
+
+		WebElement prompt = driver.findElement(By.id("tryLexDialogX"));
+		WaitUntilElementIsVisible(prompt, "prompt");
+
+		prompt.click();
+		System.out.println("prompt closed");
+		WebElement linkName = driver
+				.findElement(By.xpath("//table/tbody/tr/td[2]/div[1]/div[1]/div/div[2]/span[1]/h1/a"));
+		Thread.sleep(3000);
+
+		clickElement(linkName, "linkName");
+		Thread.sleep(2000);
+		WebElement contactEditPen = driver.findElement(By.xpath("//img[@title='Edit Profile']"));
+		clickElement(contactEditPen, "Edit Profile");
+
+		WebElement frame1 = driver.findElement(By.id("contactInfoContentId"));
+		WaitUntilElementIsVisible(frame1, "frame1");
+		driver.switchTo().frame(frame1);
+		Thread.sleep(3000);
+
+		WebElement about = driver.findElement(By.xpath("//li[@id=\"aboutTab\"]/a[1]"));
+		// about.click();
+		clickElement(about, "about");
+
+		WebElement lastName = driver.findElement(By.id("lastName"));
+		clearElement(lastName, "lastname");
+		lastName.sendKeys("Abcd");
+		WebElement saveAll = driver.findElement(By.xpath("//div[@class=\"net-buttons zen-mtl\"]/input[1]"));
+		clickElement(saveAll, "saveAll");
+		WebElement verifyName = driver.findElement(By.id("tailBreadcrumbNode"));
+		String actual = verifyName.getText();
+		System.out.println("String actual is " + actual);
+		Assert.assertEquals(actual, expected);
+
+	}
+
+	@Test
+	public static void verifyTabCustomizationTc35() throws InterruptedException {
+		validLoginMethod();
+		WebElement allTab = driver.findElement(By.xpath("//img[@title='All Tabs']"));
+		clickElement(allTab, "allTab");
+		Thread.sleep(2000);
+
+		WebElement customizeTab = driver.findElement(By.xpath("//input[@title='Customize My Tabs']"));
+		// waitFluentForVisibility(customizeTab, "customizeTab");
+		clickElement(customizeTab, "customizeTab");
+		Thread.sleep(2000);
+		WebElement libraryTabInSelectedTab = driver.findElement(By.xpath("//select/option[text()='Libraries']"));
+		clickElement(libraryTabInSelectedTab, "Libraries");
+		WebElement remove = driver
+				.findElement(By.xpath("//div[2]/table/tbody/tr[4]/td/div/table/tbody/tr/td[2]/div[3]/a/img"));
+		// waitFluentForVisibility(libraryTabInSelectedTab, "libraryTabInSelectedTab");
+		WaitUntilElementIsVisible(libraryTabInSelectedTab, "libraryTabInSelectedTab");
+		clickElement(remove, "remove");
+		Thread.sleep(2000);
+		WebElement save = driver.findElement(By.xpath("//tbody/tr[1]/td[2]/input[1]"));
+		clickElement(save, "save");
+
+		WebElement usermenu = driver.findElement(By.id("userNavButton"));
+		clickElement(usermenu, "usermenu");
+		WebElement logout = driver.findElement(By.xpath("//a[@title='Logout']"));
+		clickElement(logout, "logout");
+		Thread.sleep(2000);
+		validLoginMethod();
+
+		WebElement allTab1 = driver.findElement(By.xpath("//img[@title='All Tabs']"));
+		clickElement(allTab1, "allTab");
+		Thread.sleep(2000);
+
+		WebElement customizeTab1 = driver.findElement(By.xpath("//input[@title='Customize My Tabs']"));
+		// waitFluentForVisibility(customizeTab, "customizeTab");
+		clickElement(customizeTab1, "customizeTab");
+		String expected = "Customize My Tabs";
+		WebElement assertex = driver.findElement(By.xpath("//h1[@class='noSecondHeader pageType']"));
+		String actual = assertex.getText();
+
+		Assert.assertEquals(actual, expected);
+
+	}
+
+	@Test
+	public static void blockingEventInTheCalenderTc36() throws InterruptedException {
+		validLoginMethod();
+		String expected = "Calendar for Janani Abcd - Month View";
+
+		WebElement home = driver.findElement(By.id("home_Tab"));
+		// WaitUntilElementIsVisible(home, "home");
+		clickElement(home, "home");
+		Thread.sleep(3000);
+
+		// WebElement prompt = driver.findElement(By.id("tryLexDialogX"));
+		Thread.sleep(3000);
+		WebElement prompt = driver.findElement(By.xpath("//a[@class='dialogClose']"));
+
+		// if(prompt.isDisplayed()) {
+		// WaitUntilElementIsVisible(prompt, "prompt");
+		prompt.click();
+		// }
+		System.out.println("prompt closed");
+		WebElement dateLink = driver.findElement(By.xpath("//table/tbody/tr/td[2]/div[1]/div[1]/div/div[2]/span[2]/a"));
+		clickElement(dateLink, "dateLink");
+		WebElement eightPm = driver.findElement(By.xpath("//table/tbody/tr[2]/td[1]/div[29]/a"));
+		clickElement(eightPm, "eightPm");
+		// child child window
+		WebElement subject = driver.findElement(By.className("comboboxIcon"));
+		clickElement(subject, "subject");
+		Thread.sleep(3000);
+		// driver.switchTo().alert().accept();
+
+		Set<String> windows = driver.getWindowHandles();
+		Iterator<String> it = windows.iterator();
+		String parentWindowobj = it.next();
+		System.out.println(parentWindowobj);
+
+		String childWindowobj = it.next();
+		System.out.println(childWindowobj);
+		Thread.sleep(2000);
+		driver.switchTo().window(childWindowobj);
+		WebElement other = driver.findElement(By.xpath("//body/div[2]/ul[1]/li[5]/a[1]"));
+
+		mouseoverAction(other, "other");
+
+		driver.switchTo().window(parentWindowobj);
+
+		WebElement end = driver.findElement(By.id("EndDateTime_time"));
+		mouseoverAction(end, "end");
+		WebElement choosingTime = driver.findElement(By.id("timePickerItem_42"));
+		choosingTime.click();
+		WebElement save = driver.findElement(By.xpath("//input[@title='Save']"));
+		clickElement(save, "save");
+		WebElement assertex = driver.findElement(By.xpath("//h1[@class='pageType']"));
+		String actual = assertex.getText();
+
+		Assert.assertEquals(actual, expected);
+
+	}
+
+	@Test
+	public static void blockingEventInWeeklyResurrancerTc37() throws InterruptedException {
+		validLoginMethod();
+		String expected = "Calendar for Janani Abcd - Month View";
+		WebElement home = driver.findElement(By.id("home_Tab"));
+		// WaitUntilElementIsVisible(home, "home");
+		clickElement(home, "home");
+
+		Thread.sleep(5000);
+		 WebElement prompt = driver.findElement(By.id("tryLexDialogX"));
+		//WebElement prompt = driver.findElement(By.xpath("//a[@class='dialogClose']"));
+
+		if (prompt.isDisplayed()) {
+			WaitUntilElementIsVisible(prompt, "prompt");
+			prompt.click();
+		}
+		System.out.println("prompt closed");
+		WebElement dateLink = driver.findElement(By.xpath("//table/tbody/tr/td[2]/div[1]/div[1]/div/div[2]/span[2]/a"));
+		clickElement(dateLink, "dateLink");
+		Thread.sleep(2000);
+		//// table/tbody/tr[2]/td[1]/div[21]
+		WebElement fourPm = driver.findElement(By.xpath("//table/tbody/tr[2]/td[1]/div[21]"));
+		clickElement(fourPm, "fourPm");
+		WebElement subject = driver.findElement(By.className("comboboxIcon"));
+		clickElement(subject, "subject");
+		Thread.sleep(3000);
+		// driver.switchTo().alert().accept();
+
+		Set<String> windows = driver.getWindowHandles();
+		Iterator<String> it = windows.iterator();
+		String parentWindowobj = it.next();
+		System.out.println(parentWindowobj);
+
+		String childWindowobj = it.next();
+		System.out.println(childWindowobj);
+		Thread.sleep(2000);
+		driver.switchTo().window(childWindowobj);
+		WebElement other = driver.findElement(By.xpath("//body/div[2]/ul[1]/li[5]/a[1]"));
+
+		mouseoverAction(other, "other");
+
+		driver.switchTo().window(parentWindowobj);
+
+		WebElement end = driver.findElement(By.id("EndDateTime_time"));
+		mouseoverAction(end, "end");
+		// timePickerItem_38
+
+		WebElement choosingTime = driver.findElement(By.id("timePickerItem_38"));
+		choosingTime.click();
+
+		// IsRecurrence
+
+		WebElement checkRec = driver.findElement(By.id("IsRecurrence"));
+		clickElement(checkRec, "checkRec");
+
+		WebElement weeklyRadio = driver.findElement(By.id("rectypeftw"));
+		clickElement(weeklyRadio, "weeklyRadio");
+
+		// RecurrenceEndDateOnly
+
+		WebElement RecEnd = driver.findElement(By.id("RecurrenceEndDateOnly"));
+		clickElement(RecEnd, "RecEnd");
+
+		// weekday nextMonth
+
+		WebElement selectingDate = driver
+				.findElement(By.xpath("//table/tbody/tr/td[2]/div[2]/div[2]/table/tbody/tr[6]/td[4]"));
+		clickElement(selectingDate, "selectingDate");
+
+		WebElement save = driver.findElement(By.xpath("//input[@title='Save']"));
+		clickElement(save, "save");
+
+		// monthViewIcon
+
+		WebElement monthViewIcon = driver.findElement(By.xpath("//img[@class='monthViewIcon']"));
+		clickElement(monthViewIcon, "monthViewIcon");
+
+		WebElement assertex = driver.findElement(By.xpath("//h1[@class='pageType']"));
+		String actual = assertex.getText();
+
+		Assert.assertEquals(actual, expected);
 
 	}
 

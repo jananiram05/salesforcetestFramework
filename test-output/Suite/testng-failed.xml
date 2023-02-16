@@ -7,11 +7,15 @@
       <class name="com.salesforcetest.SalesforceTestAutomation">
         <methods>
           <include name="createAccountReportTc14"/>
-          <include name="salesforceLoginErrorTc1"/>
-          <include name="checkerrorMessageinContacs30"/>
+          <include name="mergeAccountsTc13"/>
+          <include name="createNewcontactTc25"/>
           <include name="setupBeforeTestMethod"/>
+          <include name="createAccountTc10"/>
+          <include name="editViewTc12"/>
+          <include name="stuckOptsReportTc18"/>
           <include name="AfterTearDownMethod"/>
           <include name="setUpBeforeTest"/>
+          <include name="blockingEventInTheCalenderTc36"/>
         </methods>
       </class> <!-- com.salesforcetest.SalesforceTestAutomation -->
     </classes>

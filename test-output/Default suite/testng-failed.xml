@@ -5,7 +5,7 @@
     <classes>
       <class name="com.salesforcetest.SalesforceTestAutomation">
         <methods>
-          <include name="myprofile6"/>
+          <include name="blockingEventInWeeklyResurrancerTc37"/>
           <include name="setupBeforeTestMethod"/>
           <include name="AfterTearDownMethod"/>
           <include name="setUpBeforeTest"/>

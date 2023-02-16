@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="32" total="33" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="38" passed="31" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-12T21:18:53 EST" name="Default suite" finished-at="2023-02-12T21:19:22 EST" duration-ms="29165">
+  <suite started-at="2023-02-15T17:59:51 EST" name="Suite" finished-at="2023-02-15T18:14:47 EST" duration-ms="895418">
     <groups>
     </groups>
-    <test started-at="2023-02-12T21:18:53 EST" name="Default test" finished-at="2023-02-12T21:19:22 EST" duration-ms="29165">
+    <test started-at="2023-02-15T17:59:51 EST" name="chromeTests" finished-at="2023-02-15T18:14:47 EST" duration-ms="895418">
       <class name="com.salesforcetest.SalesforceTestAutomation">
-        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@3ce1e309]" started-at="2023-02-12T21:18:54 EST" name="setUpBeforeTest" finished-at="2023-02-12T21:18:54 EST" duration-ms="633" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T17:59:51 EST" name="setUpBeforeTest" finished-at="2023-02-15T17:59:52 EST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeTest -->
-        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@3ce1e309]" started-at="2023-02-12T21:18:54 EST" name="setupBeforeTestMethod" finished-at="2023-02-12T21:18:58 EST" duration-ms="4013" status="PASS">
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T17:59:52 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T17:59:56 EST" duration-ms="3817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,1152 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeTestMethod -->
-        <test-method signature="createNewOptyTc16()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@3ce1e309]" started-at="2023-02-12T21:18:58 EST" name="createNewOptyTc16" finished-at="2023-02-12T21:19:22 EST" duration-ms="23683" status="PASS">
+        <test-method signature="blockingEventInTheCalenderTc36()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T17:59:56 EST" name="blockingEventInTheCalenderTc36" finished-at="2023-02-15T18:00:21 EST" duration-ms="25852" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Calendar for Janani Abcd - Month View] but found [Calendar for Janani Abcd - Day View]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Calendar for Janani Abcd - Month View] but found [Calendar for Janani Abcd - Day View]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.salesforcetest.SalesforceTestAutomation.blockingEventInTheCalenderTc36(SalesforceTestAutomation.java:1252)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockingEventInTheCalenderTc36 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:22 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:00:22 EST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:22 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:00:26 EST" duration-ms="3515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="blockingEventInWeeklyResurrancerTc37()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:26 EST" name="blockingEventInWeeklyResurrancerTc37" finished-at="2023-02-15T18:00:48 EST" duration-ms="22597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockingEventInWeeklyResurrancerTc37 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:48 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:00:49 EST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:49 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:00:52 EST" duration-ms="3039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="cancelinCreateNewViewTc31()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:00:52 EST" name="cancelinCreateNewViewTc31" finished-at="2023-02-15T18:01:10 EST" duration-ms="17942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelinCreateNewViewTc31 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:10 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:01:10 EST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:10 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:01:14 EST" duration-ms="3974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="checkerrorMessageinContacs30()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:14 EST" name="checkerrorMessageinContacs30" finished-at="2023-02-15T18:01:38 EST" duration-ms="23716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkerrorMessageinContacs30 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:38 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:01:38 EST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:38 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:01:42 EST" duration-ms="3281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="contactNameInRecentContacs29()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:01:42 EST" name="contactNameInRecentContacs29" finished-at="2023-02-15T18:02:05 EST" duration-ms="23525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactNameInRecentContacs29 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:05 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:02:05 EST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:05 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:02:09 EST" duration-ms="3638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createAccountReportTc14()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:09 EST" name="createAccountReportTc14" finished-at="2023-02-15T18:02:24 EST" duration-ms="15381" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Accounts with last activity > 30 days')]"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57943}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb3c8488a8a9e4626e8d52ca89e30938
+*** Element info: {Using=xpath, value=//a[contains(text(),'Accounts with last activity > 30 days')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Accounts with last activity > 30 days')]"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57943}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb3c8488a8a9e4626e8d52ca89e30938
+*** Element info: {Using=xpath, value=//a[contains(text(),'Accounts with last activity > 30 days')]}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.salesforcetest.SalesforceTestAutomation.createAccountReportTc14(SalesforceTestAutomation.java:534)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountReportTc14 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:25 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:02:25 EST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:25 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:02:29 EST" duration-ms="4137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createAccountTc10()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:29 EST" name="createAccountTc10" finished-at="2023-02-15T18:02:40 EST" duration-ms="10401" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86cf07400d2b7945d6f9b9447fa0d0ac
+*** Element info: {Using=xpath, value=//input[@id='acc2']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86cf07400d2b7945d6f9b9447fa0d0ac
+*** Element info: {Using=xpath, value=//input[@id='acc2']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTc10 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:40 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:02:40 EST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:40 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:02:44 EST" duration-ms="3750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createNewOptyTc16()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:02:44 EST" name="createNewOptyTc16" finished-at="2023-02-15T18:03:11 EST" duration-ms="26846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewOptyTc16 -->
-        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@3ce1e309]" started-at="2023-02-12T21:19:22 EST" name="AfterTearDownMethod" finished-at="2023-02-12T21:19:22 EST" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:11 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:03:11 EST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:11 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:03:15 EST" duration-ms="4024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createNewViewIncontactTc26()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:15 EST" name="createNewViewIncontactTc26" finished-at="2023-02-15T18:03:35 EST" duration-ms="20297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewViewIncontactTc26 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:35 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:03:36 EST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:36 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:03:39 EST" duration-ms="3172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createNewViewinAccounTc11()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:39 EST" name="createNewViewinAccounTc11" finished-at="2023-02-15T18:03:52 EST" duration-ms="13267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewViewinAccounTc11 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:52 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:03:53 EST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:53 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:03:56 EST" duration-ms="3177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="createNewcontactTc25()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:03:56 EST" name="createNewcontactTc25" finished-at="2023-02-15T18:04:07 EST" duration-ms="10422" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#tryLexDialogX"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f91ef73141eee1010090b97932a01486
+*** Element info: {Using=id, value=tryLexDialogX}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#tryLexDialogX"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f91ef73141eee1010090b97932a01486
+*** Element info: {Using=id, value=tryLexDialogX}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.salesforcetest.SalesforceTestAutomation.createNewcontactTc25(SalesforceTestAutomation.java:876)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewcontactTc25 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:07 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:04:07 EST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:07 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:04:11 EST" duration-ms="3727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="defaultViewinLeadsTc22()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:11 EST" name="defaultViewinLeadsTc22" finished-at="2023-02-15T18:04:45 EST" duration-ms="34615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultViewinLeadsTc22 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:45 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:04:46 EST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:46 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:04:49 EST" duration-ms="3249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="developerConsoleTc8()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:49 EST" name="developerConsoleTc8" finished-at="2023-02-15T18:04:59 EST" duration-ms="9608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- developerConsoleTc8 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:59 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:04:59 EST" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:04:59 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:05:31 EST" duration-ms="31799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="editViewTc12()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:05:31 EST" name="editViewTc12" finished-at="2023-02-15T18:05:31 EST" duration-ms="26" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b618946d806cf78376f31ae741d28134
+*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b618946d806cf78376f31ae741d28134
+*** Element info: {Using=id, value=username}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.base.BaseClass.validLoginMethod(BaseClass.java:84)
+at com.salesforcetest.SalesforceTestAutomation.editViewTc12(SalesforceTestAutomation.java:457)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editViewTc12 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:05:31 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:05:32 EST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:05:32 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:05:35 EST" duration-ms="3638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="editedLasttnameTc34()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:05:35 EST" name="editedLasttnameTc34" finished-at="2023-02-15T18:06:01 EST" duration-ms="25391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editedLasttnameTc34 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:01 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:06:01 EST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:01 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:06:04 EST" duration-ms="3180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="forgotPasswordTc4()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:04 EST" name="forgotPasswordTc4" finished-at="2023-02-15T18:06:05 EST" duration-ms="1036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTc4 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:05 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:06:06 EST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:06 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:06:09 EST" duration-ms="3362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="forgotPasswordTc4a()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:09 EST" name="forgotPasswordTc4a" finished-at="2023-02-15T18:06:23 EST" duration-ms="14296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTc4a -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:23 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:06:24 EST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:24 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:06:27 EST" duration-ms="2607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="leadsDropdown21()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:27 EST" name="leadsDropdown21" finished-at="2023-02-15T18:06:37 EST" duration-ms="10682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leadsDropdown21 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:37 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:06:38 EST" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:38 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:06:41 EST" duration-ms="3077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="leadsTabTc20()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:41 EST" name="leadsTabTc20" finished-at="2023-02-15T18:06:53 EST" duration-ms="11702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leadsTabTc20 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:53 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:06:54 EST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:54 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:06:57 EST" duration-ms="3006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="logout9()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:06:57 EST" name="logout9" finished-at="2023-02-15T18:07:07 EST" duration-ms="10596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout9 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:07 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:07:08 EST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:08 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:07:10 EST" duration-ms="2522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="mergeAccountsTc13()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:10 EST" name="mergeAccountsTc13" finished-at="2023-02-15T18:07:22 EST" duration-ms="11699" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6806a5d5e5b2d862567c4c881f4c7f06
+*** Element info: {Using=xpath, value=//input[@id='acc2']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6806a5d5e5b2d862567c4c881f4c7f06
+*** Element info: {Using=xpath, value=//input[@id='acc2']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.salesforcetest.SalesforceTestAutomation.createAccountTc10(SalesforceTestAutomation.java:417)
+at com.salesforcetest.SalesforceTestAutomation.mergeAccountsTc13(SalesforceTestAutomation.java:491)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mergeAccountsTc13 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:22 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:07:22 EST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:22 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:07:25 EST" duration-ms="3216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="myContactsViewInTheCorrectPage28()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:25 EST" name="myContactsViewInTheCorrectPage28" finished-at="2023-02-15T18:07:40 EST" duration-ms="14530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myContactsViewInTheCorrectPage28 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:40 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:07:41 EST" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:41 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:07:44 EST" duration-ms="3653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="myprofile6()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:07:44 EST" name="myprofile6" finished-at="2023-02-15T18:08:57 EST" duration-ms="72318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myprofile6 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:08:57 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:08:57 EST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:08:57 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:09:00 EST" duration-ms="3609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="mysettings7()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:00 EST" name="mysettings7" finished-at="2023-02-15T18:09:25 EST" duration-ms="24243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mysettings7 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:25 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:09:25 EST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:25 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:09:28 EST" duration-ms="3032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="newButtonOnLeadsTc24()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:28 EST" name="newButtonOnLeadsTc24" finished-at="2023-02-15T18:09:49 EST" duration-ms="20715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newButtonOnLeadsTc24 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:49 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:09:50 EST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:50 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:09:54 EST" duration-ms="3699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="oppurtunityDropDownTc15()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:09:54 EST" name="oppurtunityDropDownTc15" finished-at="2023-02-15T18:10:11 EST" duration-ms="16853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oppurtunityDropDownTc15 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:11 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:10:12 EST" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:12 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:10:16 EST" duration-ms="3894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="optyyPipelineReportTc17()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:16 EST" name="optyyPipelineReportTc17" finished-at="2023-02-15T18:10:28 EST" duration-ms="12831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- optyyPipelineReportTc17 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:28 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:10:30 EST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:30 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:10:33 EST" duration-ms="3442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="recentlyCreatedcontactTc27()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:33 EST" name="recentlyCreatedcontactTc27" finished-at="2023-02-15T18:10:48 EST" duration-ms="14340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recentlyCreatedcontactTc27 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:48 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:10:48 EST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:48 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:10:53 EST" duration-ms="5109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="rememberMeTc3()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:10:53 EST" name="rememberMeTc3" finished-at="2023-02-15T18:11:00 EST" duration-ms="6919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rememberMeTc3 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:00 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:11:01 EST" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:01 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:11:05 EST" duration-ms="4420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="salesforceLoginErrorTc1()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:05 EST" name="salesforceLoginErrorTc1" finished-at="2023-02-15T18:11:07 EST" duration-ms="2184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salesforceLoginErrorTc1 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:07 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:11:08 EST" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:08 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:11:12 EST" duration-ms="4342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="salesforceLoginTc2()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:12 EST" name="salesforceLoginTc2" finished-at="2023-02-15T18:11:44 EST" duration-ms="31822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salesforceLoginTc2 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:44 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:11:47 EST" duration-ms="2560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:47 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:11:51 EST" duration-ms="4136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="saveAndNewInContactsTc32()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:11:51 EST" name="saveAndNewInContactsTc32" finished-at="2023-02-15T18:12:11 EST" duration-ms="20213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAndNewInContactsTc32 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:11 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:12:14 EST" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:14 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:12:19 EST" duration-ms="5064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="stuckOptsReportTc18()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:19 EST" name="stuckOptsReportTc18" finished-at="2023-02-15T18:12:34 EST" duration-ms="14778" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#tryLexDialogX"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e606baed88caa10cce73800719031566
+*** Element info: {Using=id, value=tryLexDialogX}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#tryLexDialogX"}
+  (Session info: chrome=109.0.5414.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PEBBLES', ip: '192.168.1.171', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\agmarc80\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e606baed88caa10cce73800719031566
+*** Element info: {Using=id, value=tryLexDialogX}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.salesforcetest.SalesforceTestAutomation.stuckOptsReportTc18(SalesforceTestAutomation.java:669)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stuckOptsReportTc18 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:34 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:12:35 EST" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:35 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:12:40 EST" duration-ms="5220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="testQuarterlySummaryReportTc19()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:12:40 EST" name="testQuarterlySummaryReportTc19" finished-at="2023-02-15T18:13:00 EST" duration-ms="20177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuarterlySummaryReportTc19 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:00 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:13:00 EST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:00 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:13:05 EST" duration-ms="4713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="todaysLeadsTc23()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:05 EST" name="todaysLeadsTc23" finished-at="2023-02-15T18:13:28 EST" duration-ms="22746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todaysLeadsTc23 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:28 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:13:30 EST" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:30 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:13:34 EST" duration-ms="4388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="usermenuDropDownTc5()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:34 EST" name="usermenuDropDownTc5" finished-at="2023-02-15T18:13:48 EST" duration-ms="13682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usermenuDropDownTc5 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:48 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:13:49 EST" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:49 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:13:53 EST" duration-ms="3955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="verifyFirstnameTc33()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:13:53 EST" name="verifyFirstnameTc33" finished-at="2023-02-15T18:14:14 EST" duration-ms="21587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstnameTc33 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:14:14 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:14:14 EST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTearDownMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod(java.lang.String)[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:14:14 EST" name="setupBeforeTestMethod" finished-at="2023-02-15T18:14:18 EST" duration-ms="3667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="verifyTabCustomizationTc35()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:14:18 EST" name="verifyTabCustomizationTc35" finished-at="2023-02-15T18:14:46 EST" duration-ms="28024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTabCustomizationTc35 -->
+        <test-method is-config="true" signature="AfterTearDownMethod()[pri:0, instance:com.salesforcetest.SalesforceTestAutomation@74e52303]" started-at="2023-02-15T18:14:46 EST" name="AfterTearDownMethod" finished-at="2023-02-15T18:14:47 EST" duration-ms="692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTearDownMethod -->
       </class> <!-- com.salesforcetest.SalesforceTestAutomation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chromeTests -->
+  </suite> <!-- Suite -->
 </testng-results>

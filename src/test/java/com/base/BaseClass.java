@@ -227,6 +227,13 @@ public class BaseClass {
 	public static void waitUntiPageloads() {
 		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 	}
+	public static void mouseoverAction(WebElement ele,String obj) {
+		Actions actions = new Actions(driver);
+       actions.moveToElement(ele);
+	    actions.click().build().perform();
+		System.out.println(" cursor moved to web element and clicked"+obj);
+
+	}
 
 	public static void moveToElementAction(WebElement ele, String obj) {
 		Actions action=new Actions(driver);
@@ -266,20 +273,19 @@ public class BaseClass {
 				wait.until(ExpectedConditions.visibilityOf(ele));
 	}
 
-	public static void screenShotOfThePage() throws IOException {
-		String date=new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
-		String curDir=System.getProperty("user.dir");
-		TakesScreenshot screenShot=(TakesScreenshot)driver;
-		File imgFile=screenShot.getScreenshotAs(OutputType.FILE);
-		File destFile=new File(curDir + "/screenShots/"+ date + ".png");
-		try {
-		FileHandler.copy(imgFile, destFile);}
-		catch(IOException e) {
-			e.printStackTrace();
-		}
-		
-		
-	}
+	/*
+	 * public static void screenShotOfThePage() throws IOException { String date=new
+	 * SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date()); String
+	 * curDir=System.getProperty("user.dir"); TakesScreenshot
+	 * screenShot=(TakesScreenshot)driver; File
+	 * imgFile=screenShot.getScreenshotAs(OutputType.FILE); File destFile=new
+	 * File(curDir + "/screenShots/"+ date + ".png"); try {
+	 * FileHandler.copy(imgFile, destFile);} catch(IOException e) {
+	 * e.printStackTrace(); }
+	 * 
+	 * 
+	 * }
+	 */
 
 	public  String getScreenshotOfThePage(WebDriver driver) {
 		/*
